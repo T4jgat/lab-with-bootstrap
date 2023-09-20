@@ -1,9 +1,10 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
 }
 
-body {
+/*
+ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 10px;
@@ -24,12 +25,12 @@ body {
     padding-left: 5px;
 }
 
-
-
+*/
 .student {
     margin-top: 25px;
     display: flex;
 }
+
 
 .student img {
     width: 8%;
@@ -38,13 +39,33 @@ body {
     padding-right: 7px;
 }
 
-.student-desc h3 {
-    display: block;
+.student-desc {
+    flex: 1;
 }
 
 .student-desc p {
-    font-size: 80%;
+    flex: 1;
+    font-size: 90%;
+    margin-bottom: 1px;
+
 }
+
+footer {
+    margin-top: 4%;
+    ;
+    background-color: rgb(40, 40, 40);
+}
+
+footer p {
+    padding: 20px;
+    color: aliceblue;
+    padding-bottom: 40px;
+}
+
+/*
+
+
+
 
 p.quote {
     color: darkslategrey;
@@ -52,9 +73,7 @@ p.quote {
     font-weight: bold;
 }
 
-#search {
-    margin-bottom: 10px;
-}
+
 
 
 nav {
@@ -115,3 +134,21 @@ p.description {
 tr#first {
     background-color: red;
 } */
+
+.navbar-brand {
+    padding-left: 10px;
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.logout {
+    color: rgb(255, 107, 107);
+}
+
+#search {
+    margin-bottom: 10px;
+}

@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>first project</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -13,20 +18,62 @@
     <header>
         <div class="logo">
             <img id="main-image" src="logo.png" alt="">
-            <h1>Boodle</h1>
         </div>
-        <nav>
+        <!-- <nav>
             <h2 style="text-transform: uppercase; text-decoration: underline;">Navigation</h2>
             <a href="home.boodle.com">home</a> |
             <a href="profile.boodle.com">profile</a> |
             <a href="settings.boodle.com">settings</a> |
             <a href="about.boodle.com">about</a>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="img/logo.png" class="img-fluid img-thumbnail col-1" alt="Responsive image">
+                <a class="navbar-brand" href="#">Boodle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sections
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Curriculum</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li> -->
+                                <li><a class="dropdown-item" href="#">Transcript</a></li>
+                                <li><a class="dropdown-item logout" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="content">
-        <div class="student">
-            <img src="lapis.jpg" alt="">
-            <div class="student-desc">
+        <div class="student container-fluid row d-flex align-items-center">
+            <img src="img/lapis.jpg" class="rounded-circle col-1" alt="">
+            <div class="student-desc col-10 col-sm-12">
                 <h3>Mukhtarov Talgat</h3>
                 <p>Birth date: 16.03.2005</p>
                 <p>Degree: Bachleor</p>
@@ -44,7 +91,7 @@
             <button>search</button>
         </form>
         <table class="table">
-            <tr>
+            <tr class="table-light">
                 <th>Subject</th>
                 <th>codeaname</th>
                 <th>credit</th>
@@ -84,12 +131,37 @@
 
         <div class="upcoming-classes">
             <h3>Upcoming</h3>
-            <ol>
-                <li>Web technologies (5 credits)</li>
-                <li>Kazakh language 1 (2 credits)</li>
-                <li>Analytic design of Computer Science (5 credits)</li>
-                <li>Physical Education (2 credits)</li>
-            </ol>
+            <table class="table">
+                <thead class="table-light">
+                    <tr>
+                        <th>Subject</th>
+                        <th>codeaname</th>
+                        <th>credit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Web technologies</th>
+                        <th>WBT</th>
+                        <th>5</th>
+                    </tr>
+                    <tr>
+                        <th>Kazakh Language</th>
+                        <th>KZL</th>
+                        <th>5</th>
+                    </tr>
+                    <tr>
+                        <th>Analytic design of Computer Science</th>
+                        <th>ADCS</th>
+                        <th>5</th>
+                    </tr>
+                    <tr>
+                        <th>Physical Education</th>
+                        <th>PE</th>
+                        <th>2</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
